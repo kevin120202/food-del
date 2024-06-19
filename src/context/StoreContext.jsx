@@ -26,9 +26,9 @@ const StoreContextProvider = ({ children }) => {
         removeFromCart
     }
 
-    useEffect(() => {
-        console.log(cartItems);
-    }, [cartItems])
+    // useEffect(() => {
+    //     console.log(cartItems);
+    // }, [cartItems])
 
     return (
         <StoreContext.Provider value={contextValue}>
