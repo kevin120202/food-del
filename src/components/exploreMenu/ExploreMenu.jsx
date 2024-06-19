@@ -11,7 +11,6 @@ export default function ExploreMenu({ category, setCategory }) {
             <p className="explore-menu-text">Choose from a diverse menu feuturing a delectable array of dishes. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
             <div className="explore-menu-list">
                 {menu_list.map((item, index) => {
-                    console.log(category);
                     return (
                         <div key={index} onClick={() => setCategory(prev => prev === item.menu_name ? "all" : item.menu_name)} className='explore-menu-list-item'>
                             <img className={category === item.menu_name ? "active" : ""} src={item.menu_image} alt="food img" />
