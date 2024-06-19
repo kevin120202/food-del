@@ -14,7 +14,7 @@ export default function Footer() {
                         <a href="https://www.facebook.com/stixandnoodles/" target='_blank'>
                             <img src={assets.facebook_icon} alt="facebook icon" />
                         </a>
-                        <img src={assets.linkedin_icon} alt="linkedin icon" />
+                        {/* <img src={assets.linkedin_icon} alt="linkedin icon" /> */}
                         <img src={assets.twitter_icon} alt="twitter icon" />
                     </div>
                 </div>
@@ -23,8 +23,15 @@ export default function Footer() {
                     <ul>
                         <li>Home</li>
                         <li>About us</li>
-                        <li>Delivery</li>
-                        <li>Privacy Policy</li>
+                        {/* <li>Delivery</li>
+                        <li>Privacy Policy</li> */}
+                    </ul>
+                    <h2>Hours</h2>
+                    <ul>
+                        <li>Sun - Mon: Closed</li>
+                        <li>Tue - Thu: 11am - 7pm</li>
+                        <li>Friday: Closed</li>
+                        <li>Saturday: 11am - 7pm</li>
                     </ul>
                 </div>
                 <div className="footer-content-right">
@@ -38,7 +45,9 @@ export default function Footer() {
             </div>
             <hr />
             <p className='footer-copyright'>
-                Copyright 2024 - Sticks and Noodles - All rights Reserved
+                Copyright © 2024 - Sticks and Noodles - All rights Reserved
+                <br />
+                Made by Kevin Dela Paz
             </p>
         </div>
     )
