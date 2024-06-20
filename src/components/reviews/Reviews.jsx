@@ -41,9 +41,7 @@ export default function Reviews() {
                     </li>
                     <li>
                         <div className="slide">
-                            <p>"Beginning with customer service & ending with amazing cuisine - Stix & Noodles is a top notch food vendor in the McHenry County area and should be strongly considered for private & public events.
-                                My wife and I have gone out of our way numerous times to support these guys and have never been disappointed. The depth of flavor on every menu item is a true foodie's dream!
-                                10/10 Food & Service" - Brett</p>
+                            <p>"Best dam food truck around 😋 I have to have the combo at least once a week, it’s delicious. literally can smell the food cooking a block away. so so good" - Joan</p>
                         </div>
                     </li>
                     <li>
