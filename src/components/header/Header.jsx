@@ -8,16 +8,16 @@ export default function Header() {
                 <h2>Come eat your favorite Filipino food here</h2>
                 <p>Choose from a diverse menu featuring a delectable array of authentic Filipino dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
                 <div className="buttons">
-                    <button>
-                        <a href="#food-display">
+                    <a href="#food-display">
+                        <button>
                             View Menu
-                        </a>
-                    </button>
-                    <button>
-                        <a href="#footer">
+                        </button>
+                    </a>
+                    <a href="#footer">
+                        <button>
                             Order Now
-                        </a>
-                    </button>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

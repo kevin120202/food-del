@@ -11,6 +11,10 @@ export default function Navbar() {
     // const location = useLocation()
     // const currentPath = location.pathname;
 
+    const handleMobileNavClick = (link) => {
+        setMenu(link)
+        setShowMobileNav(prev => !prev)
+    }
 
     return (
         <div className='navbar'>
@@ -39,11 +43,11 @@ export default function Navbar() {
                 <button>sign in</button>
             </div> */}
             <ul className={`mobile-navbar-menu ${showMobileNav ? "show" : ""}`}>
-                <a href='#header' onClick={() => setMenu("header")} className={menu === "header" ? "active" : ""}>Home</a>
-                <a href='#about' onClick={() => setMenu("about")} className={menu === "about" ? "active" : ""}>About</a>
-                <a href='#food-display' onClick={() => setMenu("food-display")} className={menu === "food-display" ? "active" : ""}>Menu</a>
-                <a href='#reviews' onClick={() => setMenu("mobile-app")} className={menu === "mobile-app" ? "active" : ""}>Reviews</a>
-                <a href='#footer' onClick={() => setMenu("contact-us")} className={menu === "contact-us" ? "active" : ""}>Contact us</a>
+                <a href='#header' onClick={() => handleMobileNavClick("header")} className={menu === "header" ? "active" : ""}>Home</a>
+                <a href='#about' onClick={() => handleMobileNavClick("about")} className={menu === "about" ? "active" : ""}>About</a>
+                <a href='#food-display' onClick={() => handleMobileNavClick("food-display")} className={menu === "food-display" ? "active" : ""}>Menu</a>
+                <a href='#reviews' onClick={() => handleMobileNavClick("mobile-app")} className={menu === "mobile-app" ? "active" : ""}>Reviews</a>
+                <a href='#footer' onClick={() => handleMobileNavClick("contact-us")} className={menu === "contact-us" ? "active" : ""}>Contact us</a>
             </ul>
             <div className="hamburger-container" >
                 <RxHamburgerMenu className='hamburger' onClick={() => setShowMobileNav(prev => !prev)} />
