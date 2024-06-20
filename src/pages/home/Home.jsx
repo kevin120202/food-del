@@ -4,6 +4,8 @@ import Header from '../../components/header/Header'
 import ExploreMenu from '../../components/exploreMenu/ExploreMenu'
 import FoodDisplay from '../../components/foodDisplay/FoodDisplay'
 import AppDownload from '../../components/appDownload/AppDownload'
+import Reviews from '../../components/reviews/Reviews'
+import About from '../../components/about/About'
 
 export default function Home() {
     const [category, setCategory] = useState("all")
@@ -11,9 +13,11 @@ export default function Home() {
     return (
         <div>
             <Header />
-            <ExploreMenu category={category} setCategory={setCategory} />
+            <About />
+            {/* <ExploreMenu category={category} setCategory={setCategory} /> */}
             <FoodDisplay category={category} />
-            <AppDownload />
+            {/* <AppDownload /> */}
+            <Reviews />
         </div>
     )
 }

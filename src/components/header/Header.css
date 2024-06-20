@@ -42,6 +42,17 @@
     cursor: pointer;
 }
 
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-contents button:hover {
+    background-color: black;
+    color: white;
+}
+
 @media (width <=1050px) {
     .header-contents {
         max-width: 45%;
@@ -59,5 +70,9 @@
 
     .header-contents button {
         padding: 2vw 4vw;
+    }
+
+    .header-contents button {
+        padding: 9px;
     }
 }

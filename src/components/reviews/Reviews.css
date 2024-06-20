@@ -1,0 +1,54 @@
+.reviews {
+    margin-top: 100px;
+    position: relative;
+}
+
+.reviews h2 {
+    font-size: max(2vw, 24px);
+    text-align: center;
+    font-weight: 500;
+}
+
+.next-btn,
+.back-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 50px;
+    padding: 0 10px;
+}
+
+.back-btn {
+    right: 0;
+    left: 0;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul {
+    display: flex;
+    width: 400%;
+    overflow-x: hidden;
+    transition: .5s;
+    list-style: none;
+}
+
+.slider ul li {
+    width: 50%;
+    padding: 20px;
+}
+
+.slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 10px;
+    color: #808080;
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+}

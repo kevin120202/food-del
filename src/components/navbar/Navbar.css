@@ -41,7 +41,7 @@
 
 .navbar .active {
     padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
+    border-bottom: 2px solid tomato;
 }
 
 .navbar li {
@@ -60,6 +60,19 @@
     border-radius: 5px;
     top: -8px;
     right: -8px;
+}
+
+.mobile-navbar-menu {
+    display: none;
+}
+
+
+.mobile-navbar-menu a {
+    margin-bottom: 10px;
+}
+
+.hamburger-container {
+    display: none;
 }
 
 @media (width <=1050px) {
@@ -112,5 +125,35 @@
 @media (width <=750px) {
     .navbar-menu {
         display: none;
+    }
+
+    .mobile-navbar-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: -200px;
+        width: 100%;
+        z-index: 1;
+        background-color: white;
+        align-items: center;
+        padding: 20px;
+        transition: .3s;
+    }
+
+    .show {
+        top: 140px;
+    }
+
+
+    .hamburger-container {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .hamburger-container:hover {
+        transform: scale(1.2);
     }
 }
